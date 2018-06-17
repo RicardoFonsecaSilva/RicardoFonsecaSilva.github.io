@@ -2,8 +2,34 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<a href="javascript:openSite()">Click to go to a form</a>
+<script>
+var links = [
+              "https://tinyurl.com/y853vyx3",
+				"https://tinyurl.com/yahdw7v5",
+				"https://tinyurl.com/ybwfllb4",
+				"https://tinyurl.com/y8szymv7",
+				"https://tinyurl.com/ybtgo5dh",
+				"https://tinyurl.com/yb8wk534",
+				"https://tinyurl.com/ybdrsnyc",
+				"https://tinyurl.com/y8l799hc",
+				"https://tinyurl.com/y9u848bd",
+				"https://tinyurl.com/y9o9kdau",
+				"https://tinyurl.com/y76dmqw9",
+				"https://tinyurl.com/y8eqwcrs",
+				"https://tinyurl.com/ydgnfj5o"]
+
+           var openSite = function() {
+              // get a random number between 0 and the number of links
+              var randIdx = Math.random() * links.length;
+              // round it, so it can be used as array index
+              randIdx = parseInt(randIdx, 10);
+              // construct the link to be opened
+              var link = links[randIdx];
+
+     return link;
+    };
+</script>
 
 </body>
 </html>
